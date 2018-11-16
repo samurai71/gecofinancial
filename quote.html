@@ -1,0 +1,346 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>::: Free Lease Quote  |   GECO Financial Canada :::</title>
+<style type="text/css">
+<!--
+a:link {
+	color: 333333;
+	text-decoration: none;
+}
+a:visited {
+	color: 333333;
+	text-decoration: none;
+}
+a:hover {
+	color: #0033CC;
+	text-decoration: underline;
+}
+a:active {
+	color: #0033CC;
+	text-decoration: none;
+}
+.style12 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #006699;
+	font-weight: bold;
+}
+.style15 {color: #CC0000}
+.style19 {font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #333333; font-weight: bold; }
+.style21 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #006699;
+	font-weight: bold;
+}
+-->
+</style>
+<script src="SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8007953-13']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<link href="SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+
+/***********************************************
+* Drop Down Date select script- by JavaScriptKit.com
+* This notice MUST stay intact for use
+* Visit JavaScript Kit at http://www.javascriptkit.com/ for this script and more
+***********************************************/
+
+var monthtext=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sept','Oct','Nov','Dec'];
+
+function populatedropdown(dayfield, monthfield, yearfield){
+var today=new Date()
+var dayfield=document.getElementById(dayfield)
+var monthfield=document.getElementById(monthfield)
+var yearfield=document.getElementById(yearfield)
+for (var i=0; i<31; i++)
+dayfield.options[i]=new Option(i, i+1)
+dayfield.options[today.getDate()]=new Option(today.getDate(), today.getDate(), true, true) //select today's day
+for (var m=0; m<12; m++)
+monthfield.options[m]=new Option(monthtext[m], monthtext[m])
+monthfield.options[today.getMonth()]=new Option(monthtext[today.getMonth()], monthtext[today.getMonth()], true, true) //select today's month
+var thisyear=today.getFullYear()
+for (var y=0; y<20; y++){
+yearfield.options[y]=new Option(thisyear, thisyear)
+thisyear+=1
+}
+yearfield.options[0]=new Option(today.getFullYear(), today.getFullYear(), true, true) //select today's year
+}
+
+</script>
+
+<style type="text/css">
+<!--
+.style22 {color: #990000}
+.style26 {font-size: 13px}
+.style27 {font-size: 12px}
+-->
+</style>
+</head>
+
+<body>
+<div align="center"><p align="center" class="style12">Please fill in the blanks, then <span class="style15">'print off a copy of the page'</span> before you e-mail your quote request.<br />
+E-mail it by hitting the submit button at the bottom of the page.</p>
+      <form id="leasequote" name="leasequote" method="post" action="quoteprocess.php">
+
+      <table width="730" height="19" border="1" align="center" cellpadding="3" cellspacing="1">
+        <tr>
+          <td width="355" class="style19" scope="col"><span class="style19">Date</span></td>
+          <td width="350" class="style19" scope="col"><label><span id="sprytextfield14">
+          <input name="day" type="text" id="day" size="8" />
+          <span class="textfieldRequiredMsg">A value is required.</span></span></label> <span id="sprytextfield15">
+          <input name="month" type="text" id="month" size="8" />
+          <span class="textfieldRequiredMsg">A value is required.</span></span></label> <span id="sprytextfield16">
+          <input name="year" type="text" id="year" size="8" />
+          <span class="textfieldRequiredMsg">A value is required.</span></span></label></td>
+        </tr>
+        <tr>
+          <td class="style19" scope="col">Name of Customer</td>
+          <td class="style19" scope="col"><span id="sprytextfield1">
+            <label>
+            <input type="text" name="parkname" id="parkname" />
+            </label>
+          <span class="textfieldRequiredMsg">A value is required.</span></span></td>
+        </tr>
+        <tr>
+          <td class="style19" scope="col">Address</td>
+          <td class="style19" scope="col"><span id="sprytextfield2">
+            <label>
+            <input type="text" name="parkaddress" id="parkaddress" />
+            </label>
+          <span class="textfieldRequiredMsg">A value is required.</span></span></td>
+        </tr>
+        <tr>
+          <td class="style19" scope="col">City</td>
+          <td class="style19" scope="col"><span id="sprytextfield3">
+            <label>
+            <input type="text" name="city" id="city" />
+            </label>
+          <span class="textfieldRequiredMsg">A value is required.</span></span></td>
+        </tr>
+        <tr>
+          <td class="style19" scope="col">Province</td>
+          <td class="style19" scope="col"><span id="sprytextfield4">
+            <label>
+            <input type="text" name="province" id="province" />
+            </label>
+          <span class="textfieldRequiredMsg">A value is required.</span></span></td>
+        </tr>
+        <tr>
+          <td class="style19" scope="col">Postal Code</td>
+          <td class="style19" scope="col"><span id="sprytextfield5">
+            <label>
+            <input type="text" name="postalcode" id="postalcode" />
+            </label>
+          <span class="textfieldRequiredMsg">A value is required.</span></span></td>
+        </tr>
+        <tr>
+          <td class="style19" scope="col">Contact Name</td>
+          <td class="style19" scope="col"><span id="sprytextfield6">
+            <label>
+            <input type="text" name="contactname" id="contactname" />
+            </label>
+          <span class="textfieldRequiredMsg">A value is required.</span></span></td>
+        </tr>
+        <tr>
+          <td class="style19" scope="col">Contact Email</td>
+          <td class="style19" scope="col"><span id="sprytextfield7">
+          <label>
+          <input type="text" name="contactemail" id="contactemail" />
+          </label>
+          <span class="textfieldRequiredMsg">A value is required.</span><span class="textfieldInvalidFormatMsg">Invalid format.</span></span></td>
+        </tr>
+        <tr>
+          <td class="style19" scope="col">Website of Customer</td>
+          <td class="style19" scope="col"><span id="sprytextfield8">
+            <label>
+            <input type="text" name="parkwebsite" id="parkwebsite" />
+            </label>
+          <span class="textfieldRequiredMsg">A value is required.</span></span></td>
+        </tr>
+        <tr>
+          <td class="style19" scope="col">Phone Number of Contact Person</td>
+          <td class="style19" scope="col"><span id="sprytextfield9">
+            <label>
+            <input type="text" name="contactphone" id="contactphone" />
+            </label>
+          <span class="textfieldRequiredMsg">A value is required.</span></span></td>
+        </tr>
+        <tr>
+          <td class="style19" scope="col">Cell Number of Contact Person</td>
+          <td class="style19" scope="col"><span id="sprytextfield10">
+            <label>
+            <input type="text" name="contactfax" id="contactfax" />
+            </label>
+          <span class="textfieldRequiredMsg">A value is required.</span></span></td>
+        </tr>
+      </table>
+
+      <br />
+      <table width="730" border="1" align="center" cellpadding="3" cellspacing="1">
+        <tr>
+          <td width="355" class="style19" scope="col">How many units are you interested in leasing?</td>
+          <td width="354" class="style19" scope="col"><label>
+            <select name="coachunits" id="coachunits">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+            </select>
+          </label></td>
+        </tr>
+        <tr>
+          <td class="style19" scope="col">What is the approximate cost of each unit</td>
+          <td class="style19" scope="col">$ <span id="sprytextfield11">
+            <label>
+            <input type="text" name="unitcost" id="unitcost" />
+            </label>
+          <span class="textfieldRequiredMsg">A value is required.</span></span></td>
+        </tr>
+        <tr>
+          <td class="style19" scope="col">How much will set up costs/training be for each unit</td>
+          <td class="style19" scope="col">$<span id="sprytextfield12">
+            <label>
+            <input type="text" name="setupcost" id="setupcost" />
+            </label>
+          <span class="textfieldRequiredMsg">A value is required.</span></span></td>
+        </tr>
+        <tr>
+          <td class="style19" scope="col">How much will the freight be for each unit</td>
+<td class="style19" scope="col">$ <span id="sprytextfield17">
+            <label>
+            <input type="text" name="freight" id="freight" />
+            </label>
+          <span class="textfieldRequiredMsg">A value is required.</span></span></td>
+        </tr>
+        <tr>
+          <td class="style19" scope="col">How much tax will be included for the unit</td>
+          <td class="style19" scope="col">$ <span id="sprytextfield13">
+            <label>
+            <input type="text" name="unittax" id="unittax" />
+            </label>
+          <span class="textfieldRequiredMsg">A value is required.</span></span></td>
+        </tr>
+        <tr>
+          <td class="style19" scope="col">When do you wish to take delivery</td>
+          <td class="style19" scope="col"><label>
+            <select id="daydropdown" name="day2">
+</select>
+<select id="monthdropdown" name="month2">
+</select>
+<select id="yeardropdown" name="year2">
+</select>
+          </label></td>
+        </tr>
+        <tr>
+          <td class="style19" scope="col"><p class="style19">Do you want a lease where all payments remain the same throughout the 12 months of the lease each year or would you like smaller payments for the 6 offseason months each year and higher payments during the inseason 6 months? Leave blank if seasonal payments not required</p></td>
+          <td class="style19" scope="col">12 months the same
+            <label>
+            <input name="12months" type="checkbox" id="12months" value="12 months the same" />
+            <br />
+            6 months higher &amp; 6 months lower
+            <input name="6months" type="checkbox" id="6months" value="6 months higher &amp; 6 months lower" />
+          </label></td>
+        </tr>
+        <tr>
+          <td class="style19" scope="col">How many months would you like a quote for</td>
+          <td class="style19" scope="col">39 months
+            <label>
+            <input name="39months" type="checkbox" id="39months" value="39 months" />
+          52 months
+          <input name="52months" type="checkbox" id="52months" value="52 months" />
+          </label>
+            66 months
+            <label>
+            <input name="66months" type="checkbox" id="66months" value="66 months" />
+            </label></td>
+        </tr>
+      </table>
+      <span class="style19 style26"><span class="style22"><br />
+      <span class="style26">&quot;IMPORTANT&quot;</span></span><span class="style26"> - If you want a copy of this information print it off before you email it to GECO.</span></span>
+      <p align="center" class="style21"><a href="javascript:window.print()"><img src="pics/printquote-button.jpg" width="200" height="65" border="0" /></a>          
+        <input type="image" src="pics/quote-button.jpg" alt="submit" width="200" height="65" />
+        <br />
+        Your quote will be sent to you by e-mail.<br />
+        Thank you for your interest in our leasing program. We look forward to working with you as soon as possible. </span></p>
+
+  </form>
+      <table width="500" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="238" class="style19" scope="col"><div align="center">The GECO Financial Team<br />
+              <span class="style21"><img src="pics/logo.jpg" width="180" height="52" /></span><br />
+          </div></td>
+          <th width="262" scope="col"><span class="style21">Joe Barnes, RHU, EPC<br />
+Toll Free - 1-866-394-4774<br /><a href="mailto:jbarnes@gecofinancial.com">jbarnes@gecofinancial.com</a></span></th>
+        </tr>
+      </table>
+
+      </div>
+
+
+<script type="text/javascript">
+
+//populatedropdown(id_of_day_select, id_of_month_select, id_of_year_select)
+window.onload=function(){
+populatedropdown("daydropdown", "monthdropdown", "yeardropdown")
+}
+</script>
+
+
+<script type="text/javascript">
+<!--
+var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1");
+var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2");
+var sprytextfield3 = new Spry.Widget.ValidationTextField("sprytextfield3");
+var sprytextfield4 = new Spry.Widget.ValidationTextField("sprytextfield4");
+var sprytextfield5 = new Spry.Widget.ValidationTextField("sprytextfield5");
+var sprytextfield6 = new Spry.Widget.ValidationTextField("sprytextfield6");
+var sprytextfield7 = new Spry.Widget.ValidationTextField("sprytextfield7", "email");
+var sprytextfield8 = new Spry.Widget.ValidationTextField("sprytextfield8");
+var sprytextfield9 = new Spry.Widget.ValidationTextField("sprytextfield9");
+var sprytextfield10 = new Spry.Widget.ValidationTextField("sprytextfield10");
+var sprytextfield11 = new Spry.Widget.ValidationTextField("sprytextfield11");
+var sprytextfield12 = new Spry.Widget.ValidationTextField("sprytextfield12");
+var sprytextfield13 = new Spry.Widget.ValidationTextField("sprytextfield13");
+var sprytextfield14 = new Spry.Widget.ValidationTextField("sprytextfield14", "none", {hint:"day"});
+var sprytextfield15 = new Spry.Widget.ValidationTextField("sprytextfield15", "none", {hint:"month"});
+var sprytextfield16 = new Spry.Widget.ValidationTextField("sprytextfield16", "none", {hint:"year"});
+var sprytextfield17 = new Spry.Widget.ValidationTextField("sprytextfield17");
+//-->
+</script>
+</body>
+</html>
