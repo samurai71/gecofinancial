@@ -4,34 +4,34 @@ $emailsubject = 'GECO Lease Quote';
 	   $mail = 'info@gecofinancial.com';
 
 $date = $_POST['day'];
-$month = $_POST['month'];	
-$year = $_POST['year'];		   
-$parkname = $_POST['parkname'];	   
+$month = $_POST['month'];
+$year = $_POST['year'];
+$parkname = $_POST['parkname'];
 $parkaddress = $_POST['parkaddress'];
-$city = $_POST['city'];	   
+$city = $_POST['city'];
 $province = $_POST['province'];
-$postalcode = $_POST['postalcode'];	   
+$postalcode = $_POST['postalcode'];
 $contactname = $_POST['contactname'];
-$contactemail = $_POST['contactemail'];	   
+$contactemail = $_POST['contactemail'];
 $parkwebsite = $_POST['parkwebsite'];
-$contactphone = $_POST['contactphone'];	   
+$contactphone = $_POST['contactphone'];
 $contactfax = $_POST['contactfax'];
 
 
-$coachunits = $_POST['coachunits'];	   
+$coachunits = $_POST['coachunits'];
 $unitcost = $_POST['unitcost'];
 $setupcost = $_POST['setupcost'];
-$freight = $_POST['freight'];	   
+$freight = $_POST['freight'];
 $unittax = $_POST['unittax'];
 $deliveryday = $_POST['day2'];
 $deliverymonth = $_POST['month2'];
-$deliveryyear = $_POST['year2'];   
+$deliveryyear = $_POST['year2'];
 $leasepayments1 = $_POST['12months'];
 $leasepayments2 = $_POST['6months'];
 $quotefor1 = $_POST['39months'];
-$quotefor2 = $_POST['52months'];	   
+$quotefor2 = $_POST['52months'];
 $quotefor3 = $_POST['66months'];
-	   
+
 $body = <<<EOD
 <br><hr><br>
 
@@ -64,8 +64,8 @@ EOD;
 $headers = "From: $contactemail\r\n";
 	$headers .= "Content-type: text/html\r\n";
 	$success = mail($mail, $emailsubject, $body, $headers);
-	
-?>	
+
+?>
 
 
 
@@ -210,7 +210,7 @@ yearfield.options[0]=new Option(today.getFullYear(), today.getFullYear(), true, 
 <body onload="MM_preloadImages('images/buttonbar-over_01.jpg','images/buttonbar-over_02.jpg','images/buttonbar-over_03.jpg','images/buttonbar-over_04.jpg','images/buttonbar-over_05.jpg')">
 <table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <th width="900" scope="col"><img src="pics/header.jpg" width="1000" height="300" /></th>
+    <th width="900" scope="col"><img src="pics/logo.jpg" width="1000" height="300" /></th>
   </tr>
 </table>
 
